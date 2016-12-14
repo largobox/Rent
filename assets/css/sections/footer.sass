@@ -1,0 +1,124 @@
+.footer_cnt
+	background-color: $bg_color
+	color: $link_color
+	padding: 20px 150px 50px
+	@media(max-width: 1150px)
+		padding: 20px 30px 50px
+
+
+
+	.footer_inner_cnt
+
+		.footer_top
+			display: flex
+			justify-content: space-between
+			@media(max-width: 900px)
+				flex-direction: column
+
+			.footer_logo_cnt
+				width: 100%
+				max-width: 350px
+
+			.footer_logo
+				text-transform: uppercase
+				font-size: 380%
+
+	
+			.footer_top_el
+				max-width: 300px
+				padding-bottom: 20px
+
+				span
+					font-size: 100%
+
+				p
+					margin-top: 20px
+					font-size: 100%
+
+				ul
+					list-style-type: none
+
+					li
+						padding-bottom: 3px
+
+						&:hover
+							color: $select_color
+							cursor: pointer
+
+						.day_name
+							display: inline-block
+							width: 100px
+						
+						.day_time
+							display: inline-block
+
+				h6
+					color: $select_color
+					font-size: 125%
+					padding-bottom: 10px
+
+		.footer_bot
+			display: flex
+			justify-content: space-between
+			@media(max-width: 900px)
+				flex-direction: column-reverse
+
+
+			.footer_bot_el
+				margin-top: 20px
+
+				b
+					font-size: 90%
+
+				.socials_cnt
+
+					.socials_el
+						padding: 0px 3px
+						display: inline-block
+
+						svg
+							+size(30px)
+							path
+								fill: $link_color
+								transition: .3s
+
+							&:hover
+								cursor: pointer
+								path
+									fill: $select_color
+									transition: .3s
+
+				.signup_cnt
+					vertical-align: top
+
+					input
+						color: #636166
+						float: left
+						border: 2px solid $select_color
+						border-right: none
+						padding: 0 10px
+						height: 30px
+						background-color: $bg_color
+						width: calc(100% - 125px)
+						max-width: 150px
+
+						&:focus
+							outline: none
+
+							&::placeholder
+								color: transparent
+
+					.sign_up_btn
+						float: left
+						font-size: 120%
+						color: $link_color
+						background-color: $select_color
+						transition: .3s
+						padding: 6px 20px
+						width: 60px
+
+						&:hover
+							cursor: pointer
+							transition: .3s
+							color: $bg_color
+							background-color: $link_color

@@ -1,0 +1,45 @@
+.popup_cnt
+	position: absolute
+	top: 0px
+	background-color: $bg_color
+	+size(100%)
+	z-index: 1
+	opacity: .96
+	display: none
+
+	.popup_close_btn
+		margin-top: 15px
+		margin-left: 15px
+		float: left
+		opacity: .65
+
+		&:hover
+			opacity: .95
+			cursor: pointer
+
+		svg
+			+size(40px)
+
+	.mobile_nav
+		font-size: 20px
+		margin: auto
+		text-align: center
+
+		ul
+			padding-top: 70px
+			list-style-type: none
+			color: $link_color
+
+			li
+				margin-top: 12px
+				text-transform: uppercase
+				transition: .3s
+
+				&:hover
+					background-color: $select_color
+					transition: .3s
+					cursor: pointer
+					opacity: 1
+
+.popup_cnt_active
+	display: block

@@ -1,0 +1,66 @@
+$bg_color: #000000
+$link_color: #FFFFFF
+$text_color: #000000
+$select_color: #6ca037
+
+// $select_color: #57bf0a
+
+@mixin size($x)
+	width: $x
+	height: $x
+
+@import 'font'
+@import 'sections/header'
+@import 'sections/nav'
+@import 'sections/search'
+@import 'sections/about'
+@import 'sections/renting'
+@import 'sections/farming'
+@import 'sections/special_offer'
+@import 'sections/partners'
+@import 'sections/news'
+@import 'sections/footer'
+@import 'sections/popup_menu'
+
+html, body 
+	font-size: 0
+	font-family: "PT_Sans"
+	overflow-x: hidden
+
+	section
+		font-size: 14px
+
+html, body, p, ul, li, input, h1, h2, h3, h4, h5, h6, b, span
+	padding: 0
+	margin: 0
+
+	a
+		color: $link_color
+		text-decoration: none
+		transition: .3s
+
+		&:hover
+			color: $select_color
+
+// Clearfix
+
+.wrap
+	position: relative
+	background-image: url('../dest/img/bot_bg.jpg')
+	background-repeat: no-repeat
+	background-position: bottom center
+	z-index: 0
+
+.clearfix:after
+	visibility: hidden
+	display: block
+	font-size: 0
+	content: " "
+	clear: both
+	height: 0
+.clearfix 
+	display: inline-block
+* html .clearfix 
+	height: 1%
+.clearfix
+	display: block

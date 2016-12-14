@@ -1,0 +1,22 @@
+header
+	position: relative
+	z-index: 2
+	font-size: 14px
+	padding: 26px 150px 10px
+	background-color: $bg_color
+	color: $link_color
+	@media (max-width: 1200px)
+		padding: 26px 0px 10px
+
+	.header_inner
+		display: flex
+		justify-content: space-between
+		@media (max-width: 900px)
+			flex-direction: column
+			text-align: center
+
+	span
+		padding: 0 30px
+		display: block
+		@media (max-width: 900px)
+			margin-top: 8px

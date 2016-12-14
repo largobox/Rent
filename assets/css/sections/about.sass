@@ -1,0 +1,59 @@
+.about_cnt
+	width: 100%
+	background-image: url('../dest/img/main_machine.jpg')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	height: 732px
+	position: relative
+	box-sizing: border-box
+	padding: 50px 0
+
+	.about_header_cnt
+		width: 100%
+		color: $text_color
+
+		.about_header_cnt_inner
+			width: 500px
+			float: right
+			padding: 0px 20px
+			@media (max-width: 568px)
+				width: 250px
+				float: left
+
+			h1
+				font-size: 400%
+				line-height: 100%
+				@media (max-width: 568px)
+					font-size: 200%
+
+			p
+				margin-top: 20px
+				font-size: 120%
+
+	.about_desc_cnt
+		position: absolute
+		bottom: 20px
+		display: flex
+		justify-content: space-around
+		width: 100%
+		color: $link_color
+		@media (max-width: 568px)
+			flex-direction: column
+
+		.about_desc_el
+			padding: 0px 10px	
+			width: 400px
+			display: inline-block
+			@media (max-width: 568px)
+				background-color: rgba(0,0,0,0.3)
+				width: 100%
+				max-width: 280px
+				margin: auto
+
+			span
+				font-size: 200%
+
+			.desc_el_text
+				padding: 5px 0px
+				font-size: 120%

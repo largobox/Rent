@@ -1,0 +1,67 @@
+.offer_cnt
+	
+	.offer_cnt_top
+		text-align: center
+		padding: 30px 0 50px
+		font-size: 240%
+		@media(max-width: 768px)
+			font-size: 125%
+
+	.offer_cnt_bot
+		padding: 0px 100px
+		@media(max-width: 768px)
+			padding: 0px 30px
+
+		.offer_cnt_bot_inner
+			padding: 0px 10px 20px
+			background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, #88be35 50%,#46af8f 100%)
+
+			.offer_content
+				height: 284px
+				background-color: #fff
+				box-shadow: 5px 5px 12px 8px rgba(0,0,0,0.27)
+				@media(max-width: 768px)
+					height: auto
+
+				.offer_content_pic
+					width: 50%
+					float: left
+					@media(max-width: 768px)
+						width: 100%
+						float: none
+
+					img
+						width: 100%
+						max-height: 284px
+						@media(max-width: 768px)
+							max-height: none
+
+				.offer_content_inf
+					padding: 20px
+					float: left
+					width: calc(50% - 40px)
+					height: calc(100% - 40px)
+					background-color: #fff
+					@media(max-width: 768px)
+						width: calc(100% - 40px)
+						float: none
+
+					h5
+						font-size: 140%
+						padding-bottom: 20px
+
+					.main_inf
+						opacity: .7
+
+						.main_inf_el
+							vertical-align: top
+							width: 49%
+							display: inline-block
+
+							p
+								padding-top: 5px
+
+					.desc_inf
+						opacity: .8
+						padding-top: 20px
+						line-height: 140%

@@ -1,0 +1,49 @@
+.renting_cnt
+
+	.renting_cnt_inner
+
+		.renting_cnt_top
+			padding: 15px
+			font-size: 240%
+			width: 100%
+			max-width: 750px
+			text-align: center
+			margin: auto
+			@media (max-width: 768px)
+				font-size: 125%
+				max-width: 250px
+
+		.renting_cnt_bot
+			padding: 20px
+			display: flex
+			justify-content: space-between
+			@media (max-width: 768px)
+				flex-direction: column
+
+			.renting_cnt_bot_el
+				padding: 0 20px
+				text-align: left
+				width: 30%
+				@media (max-width: 768px)
+					width: 80%
+
+				.renting_cnt_bot_icon_cnt
+					padding: 25px
+					width: 50px
+					border-radius: 50%
+					box-shadow: 0px 6px 18px rgba(108,160,55, 0.8)
+				
+					.renting_cnt_bot_icon
+						+size(50px)
+
+						svg
+							path
+								fill: $select_color
+
+				h5
+					font-size: 160%
+					padding: 15px 0 15px
+
+				.renting_cnt_bot_text
+					font-size: 120%
+					padding-bottom: 60px

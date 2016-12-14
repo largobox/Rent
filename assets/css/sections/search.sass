@@ -1,0 +1,67 @@
+.search_cnt
+	transform: translate(0, -60px)
+	position: absolute
+	width: 100%
+	top: 0px
+	z-index: 1
+	transition: 0.5s
+	opacity: .85
+
+	.search_cnt_inner
+		height: 40px
+		background-color: $select_color
+		padding: 10px
+		text-align: center
+		max-width: 600px
+		margin: auto
+		border-bottom-right-radius: 10px 
+		border-bottom-left-radius: 10px
+		@media (max-width: 600px)
+			border-bottom-right-radius: 0px 
+			border-bottom-left-radius: 0px
+	
+		.search_field_cnt
+			width: calc(100% - 130px)
+			display: inline-block
+
+			input
+				width: 100%
+				font-size: 18px
+				height: 40px
+				border-radius: 10px
+				border: none
+				padding: 0 10px
+
+
+				&:focus
+					outline: none
+
+		.search_btn_cnt
+			display: inline-block
+			width: 100px
+			margin-left: 20px
+
+			button
+				text-transform: uppercase
+				height: 40px
+				border: none
+				border-radius: 10px
+				padding: 0 15px
+				transition: .3s
+
+				&:hover
+					color: $link_color
+					background-color: $bg_color
+					transition: .3s
+
+				&:focus
+					outline: none
+
+.search_cnt_active
+	transition: 0.5s
+	transform: translate(0, 0px)
+
+.search_cnt_helper
+	position: relative
+	width: 100%
+	background-color: $bg_color
