@@ -417,6 +417,8 @@ nav {
       font-size: 125%; } }
 
 .offer_cnt .offer_cnt_bot {
+  margin: auto;
+  max-width: 1000px;
   padding: 0px 100px; }
   @media (max-width: 768px) {
     .offer_cnt .offer_cnt_bot {
